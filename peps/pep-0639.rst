@@ -76,9 +76,6 @@ the license of a distribution package, specifically defining:
 The changes that this PEP requires have been designed to minimize impact and
 maximize backward compatibility.
 
-It is the intent of the PEP authors to work closely with tool maintainers to
-implement the recommendations for validation and warnings specified here.
-
 
 .. _639-non-goals:
 
