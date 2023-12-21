@@ -56,7 +56,7 @@ This PEP:
 
 The changes will update the
 `core metadata <coremetadataspec_>`__ to version 2.4, modify the
-`project (source) metadata specification <pep621spec_>`__,
+`project (source) metadata specification <pyprojecttoml_>`__,
 and make minor additions to the `source distribution (sdist) <sdistspec_>`__,
 `built distribution (wheel) <wheelspec_>`__ and
 `installed project <installedspec_>`__ standards.
@@ -285,7 +285,7 @@ for the purposes of this PEP (``Syn:``).
 
   The **Project Table Metadata**, or ``pyproject.toml`` ``[project]`` metadata,
   refers specifically to the former, as defined by the
-  `PyPA Declaring Project Metadata specification <pep621spec_>`__
+  `PyPA Declaring Project Metadata specification <pyprojecttoml_>`__
   and originally specified in :pep:`621`.
   A **Project Table Key**, or an unqualified *key* refers specifically to
   a top-level ``[project]`` key
@@ -339,7 +339,7 @@ this PEP include those in both
 :ref:`distribution package metadata <639-spec-core-metadata>`,
 as defined in the `core metadata specification <coremetadataspec_>`__, and
 :ref:`author-provided project source metadata <639-spec-source-metadata>`,
-as defined in the `project source metadata specification <_pep621spec>`__
+as defined in the `project source metadata specification <pyprojecttoml_>`__
 (and originally introduced in :pep:`621`).
 
 Further, :ref:`minor additions <639-spec-project-formats>` to the
@@ -546,7 +546,7 @@ Project source metadata
 -----------------------
 
 As originally introduced in :pep:`621`, the
-`PyPA Declaring Project Metadata specification <pep621spec_>`__
+`PyPA Declaring Project Metadata specification <pyprojecttoml_>`__
 defines how to declare a project's source
 metadata under a ``[project]`` table in the ``pyproject.toml`` file for
 build tools to consume and output distribution core metadata.
@@ -715,7 +715,7 @@ section.
 
 **Project source trees**
   As described in the :ref:`639-spec-source-metadata` section, the
-  `Declaring Project Metadata specification <pep621spec_>`__
+  `Declaring Project Metadata specification <pyprojecttoml_>`__
   will be updated to reflect that license file paths MUST be relative to the
   project root directory; i.e. the directory containing the ``pyproject.toml``
   (or equivalently, other legacy project configuration,
@@ -1297,7 +1297,7 @@ to mean something different (and map to a different core metadata field),
 with distinct and incompatible syntax and semantics, does not,
 and could cause confusion and ambiguity for readers and authors.
 
-Also, per the `project source metadata spec <pep621specdynamic_>`__,
+Also, per the `project source metadata spec <pyprojecttomldynamic_>`__,
 this would allow separately marking the ``[project]`` keys
 corresponding to the ``License`` and ``License-Expression`` metadata fields
 as ``dynamic``,
@@ -2704,8 +2704,8 @@ References
 .. _packagingtutkey: https://packaging.python.org/tutorials/packaging-projects/#configuring-metadata
 .. _packagingtuttxt: https://packaging.python.org/tutorials/packaging-projects/#creating-a-license
 .. _pbr: https://docs.openstack.org/pbr/latest/user/features.html
-.. _pep621spec: https://packaging.python.org/specifications/declaring-project-metadata/
-.. _pep621specdynamic: https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#dynamic
+.. _pyprojecttoml: https://packaging.python.org/en/latest/specifications/pyproject-toml/
+.. _pyprojecttomldynamic: https://packaging.python.org/en/latest/specifications/pyproject-toml/#dynamic
 .. _pepissue: https://github.com/pombredanne/spdx-pypi-pep/issues/1
 .. _perl: https://metacpan.org/pod/CPAN::Meta::Spec#license
 .. _pipsetup: https://github.com/pypa/pip/blob/21.3.1/setup.cfg#L114
