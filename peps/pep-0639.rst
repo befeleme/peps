@@ -365,12 +365,17 @@ The `PyPA Core Metadata specification <coremetadataspec_>`__ defines the names
 and semantics of each of the supported fields in the distribution metadata of
 Python distribution packages and installed projects.
 
-This PEP :ref:`adds <639-spec-field-license-expression>` the
-``License-Expression`` field,
-:ref:`adds <639-spec-field-license-file>` the ``License-File`` field,
-:ref:`deprecates <639-spec-field-license>` the ``License`` field,
-and :ref:`deprecates <639-spec-field-classifier>` the license classifiers
-in the ``Classifier`` field.
+This PEP:
+
+- :ref:`adds <639-spec-field-license-expression>` the
+  ``License-Expression`` field,
+
+- :ref:`adds <639-spec-field-license-file>` the ``License-File`` field,
+
+- :ref:`deprecates <639-spec-field-license>` the ``License`` field,
+
+- :ref:`deprecates <639-spec-field-classifier>` the license classifiers
+  in the ``Classifier`` field.
 
 The error and warning guidance in this section applies to build and
 publishing tools; end-user-facing install tools MAY be more lenient than
