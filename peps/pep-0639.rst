@@ -334,21 +334,22 @@ for the purposes of this PEP (``Syn:``).
 Specification
 =============
 
-The changes necessary to implement the improved license handling outlined in
-this PEP include those in both
-:ref:`distribution package metadata <639-spec-core-metadata>`,
-as defined in the `core metadata specification <coremetadataspec_>`__, and
-:ref:`author-provided project source metadata <639-spec-source-metadata>`,
-as defined in the `project source metadata specification <pyprojecttoml_>`__
-(and originally introduced in :pep:`621`).
+The necessary changes include:
 
-Further, :ref:`minor additions <639-spec-project-formats>` to the
-source distribution (sdist), built distribution (wheel) and installed project
-specifications will help document and clarify the already allowed,
-now formally standardized behavior in these respects.
-Finally, :ref:`guidance is established <639-spec-converting-metadata>`
-for tools handling and converting legacy license metadata to license
-expressions, to ensure the results are consistent, correct and unambiguous.
+- additions to :ref:`core metadata <639-spec-core-metadata>`,
+  as defined in the `specification <coremetadataspec_>`__.
+
+- additions to the author-provided
+  :ref:`project source metadata <639-spec-source-metadata>`,
+  as defined in the `specification <pyprojecttoml_>`__.
+
+- :ref:`minor additions <639-spec-project-formats>` to the
+  source distribution (sdist), built distribution (wheel) and installed project
+  specifications.
+
+- :ref:`guide for tools <639-spec-converting-metadata>`
+  handling and converting legacy license metadata to license
+  expressions, to ensure the results are consistent and correct.
 
 Note that the guidance on errors and warnings is for tools' default behavior;
 they MAY operate more strictly if users explicitly configure them to do so,
