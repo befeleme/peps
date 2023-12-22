@@ -444,6 +444,28 @@ PyPI MAY reject an upload for using a deprecated license identifier,
 so long as it was deprecated as of the above-mentioned SPDX License List
 version.
 
+.. _639-example-expression:
+
+Examples of valid ``License-Expression`` values:
+
+.. code-block:: email
+
+    License-Expression: MIT
+    License-Expression: BSD-3-Clause
+    License-Expression: MIT AND (Apache-2.0 OR BSD-2-clause)
+    License-Expression: MIT OR GPL-2.0-or-later OR (FSFUL AND BSD-2-Clause)
+    License-Expression: GPL-3.0-only WITH Classpath-Exception-2.0 OR BSD-3-Clause
+    License-Expression: LicenseRef-Public-Domain OR CC0-1.0 OR Unlicense
+    License-Expression: LicenseRef-Proprietary
+
+
+Examples of invalid ``License-Expression`` values:
+
+.. code-block:: email
+
+    License-Expression: Use-it-after-midnight
+    License-Expression: Apache-2.0 OR 2-BSD-Clause
+
 
 .. _639-spec-field-license-file:
 
@@ -2160,24 +2182,6 @@ and ``{version}`` as the previous, the license files would be installed to:
     site-packages/setuptools-${VERSION}.dist-info/licenses/setuptools/_vendor/packaging/LICENSE
     site-packages/setuptools-${VERSION}.dist-info/licenses/setuptools/_vendor/packaging/LICENSE.APACHE
     site-packages/setuptools-${VERSION}.dist-info/licenses/setuptools/_vendor/packaging/LICENSE.BSD
-
-
-.. _639-example-expression:
-
-Expression examples
--------------------
-
-Some additional examples of valid ``License-Expression`` values:
-
-.. code-block:: email
-
-    License-Expression: MIT
-    License-Expression: BSD-3-Clause
-    License-Expression: MIT AND (Apache-2.0 OR BSD-2-clause)
-    License-Expression: MIT OR GPL-2.0-or-later OR (FSFUL AND BSD-2-Clause)
-    License-Expression: GPL-3.0-only WITH Classpath-Exception-2.0 OR BSD-3-Clause
-    License-Expression: LicenseRef-Public-Domain OR CC0-1.0 OR Unlicense
-    License-Expression: LicenseRef-Proprietary
 
 
 .. _639-user-scenarios:
